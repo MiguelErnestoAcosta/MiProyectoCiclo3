@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Proyecto Mintic </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script> src="https://kit.fontawesome.com/a076d05399.js"</script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+  color: green;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 10%;
+  height: 450px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 90%;
+  background-color: white;
+  height: 450px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 1px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+table, th, td {
+  border:1px solid black;
+}
+</style>
+</head>
+
+<header>
+    <h2>INNOVATION APP</h2>
+  </header>
+<body>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Productos</a></li>
+      <li><a href="#">Ventas</a></li>
+      <li><a href="#">Usuarios</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <table >
+        <tr>
+          <th>Id</th>
+          <th >descripcion</th>
+          <th>Valor Unitario</th>
+          <th>Estado</th>
+          <th>Editar</th>
+          <th>Eliminar</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>ASUS memoria ram 12 gigas core i7</td>
+          <td>2500000</td>
+          <td>Disponible</td>
+          <td><button><i class="fas fa-trash-alt"></i></button></td>
+          <td><button><i class="fas fa-trash-alt"></i></button></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Tablet Samsung 9 pulgadas</td>
+          <td>750000</td>
+          <td>disponible</td>
+          <td><button><i class="fas fa-trash-alt"></i></button></td>
+          <td><button><i class="fas fa-trash-alt"></i></button></td>
+        </tr>
+      </table>
+  </article>
+</section>
+
+<footer>
+  <p>Creado por</p>
+  <p>Laura Juliana Valencia Echeverri</p>
+</footer>
+
+</body>
+</html>
+
