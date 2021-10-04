@@ -1,0 +1,282 @@
+body {
+  margin: 0px;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.mainContainer > main {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.mainContainer > footer {
+  background-color: rgb(169, 253, 249);
+  padding: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(237, 237, 238);
+  border-bottom: 1px solid gray;
+  box-shadow: 1px 1px gray;
+}
+
+.navbar > li {
+  display: flex;
+  align-items: center;
+}
+
+.navbarPestañas {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(90, 214, 214);
+  border-bottom: 1px solid gray;
+  box-shadow: 1px 1px gray;
+}
+
+.navbarPestañas > li {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 70px;
+}
+
+.iconos {
+  height: 40px;
+}
+
+.botonGenerico {
+  border: 0px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+.botonGenerico:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.mainButton {
+  background-color: #1bb76e;
+  color: white;
+}
+
+.mainButton:hover {
+  box-shadow: 1px 1px green;
+}
+
+.secondaryButton {
+  background-color: #66d8f5;
+  color: white;
+}
+
+.secondaryButton:hover {
+  box-shadow: 1px 1px rgb(119, 229, 233);
+}
+
+.optionButton {
+  background-color: #043461;
+  color: white;
+}
+
+.optionButton:hover {
+  box-shadow: 1px 1px rgb(119, 229, 233);
+}
+
+.buscar {
+  background-color: white;
+  border: 1px solid gray;
+  padding: 4px;
+  border-radius: 8px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buscar:focus-within {
+  border: 1px solid blue;
+}
+
+.buscar > input {
+  outline: none;
+  border: 0px;
+}
+
+.iconoBusqueda:hover {
+  color: blue;
+}
+
+.breedCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.breedCard {
+  margin: 10px;
+  background-color: rgb(78, 78, 90);
+  box-shadow: 5px 10px 5px rgb(231, 231, 231);
+  border-radius: 10px;
+}
+
+.breedTitle {
+  color: white;
+  margin: 10px;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.contenedorImagen {
+  width: 240px;
+  height: 350px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.contenedorImagen:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.contenedorImagen > img {
+  object-fit: cover;
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.backGroundRojo {
+  background-color: red;
+}
+.backGroundVerde {
+  background-color: green;
+}
+.div-1 {
+  background-color: yellowgreen;
+}
+.div-2 {
+  background-color: pink;
+}
+.div-3 {
+  background-color: blue;
+}
+
+*{box-sizing:border-box;}
+
+/* ===============  estilos formulario =================*/
+form{
+	width:300px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#ccc;
+}
+
+form label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"]{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+textarea{
+	width:100%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	/*resize: vertical | horizontal | none | both*/
+	resize:none;
+	display:block;
+}
+
+/* ===============  estilos tabla =================*/
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid purple;
+}
+
+thead th:nth-child(1) {
+  width: 30%;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(3) {
+  width: 15%;
+}
+
+thead th:nth-child(4) {
+  width: 35%;
+}
+
+th, td {
+  padding: 20px;
+}
+table {
+  width: 100%;
+  border: 1px solid #000;
+}
+th, td {
+  width: 25%;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid #000;
+  border-collapse: collapse;
+  padding: 0.3em;
+  caption-side: bottom;
+}
+caption {
+  padding: 0.3em;
+  color: #fff;
+   background: #000;
+}
+th {
+  background: #eee;
+}
