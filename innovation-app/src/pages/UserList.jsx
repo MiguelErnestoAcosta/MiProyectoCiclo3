@@ -57,6 +57,32 @@ const ProductList = () => {
                     </td>
                 </tr>
 
+                 </tr>
+
+                <tr>
+                    <td>
+                        2214
+                    </td>
+                    <td>
+                        felipe
+                    </td>
+                    <td>
+                        Admin
+                    </td>
+                    <td>
+                        Autorizado
+                    </td>
+                    <td>
+                        <img src={edit} alt='editar' className='iconos' />  
+                    </td>
+                    <td>
+                        <img src={trash} alt='eliminar' className='iconos' />  
+                    </td>
+                </tr>
+
+
+                
+
             </table>
         </div>
      );
