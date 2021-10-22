@@ -62,6 +62,30 @@ const ProductList = () => {
                     <td>
                         <img src={trash} alt='eliminar' className='iconos' />  
                     </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        3
+                    </td>
+                    <td>
+                        mobile xiomi 9s
+                    </td>
+                    <td>
+                        900.000
+                    </td>
+                    <td>
+                        Disponible
+                    </td>
+                    <td>
+                        celular con 6 gigas de ram y 128 de rom
+                    </td>
+                    <td>
+                        <img src={edit} alt='editar' className='iconos' />  
+                    </td>
+                    <td>
+                        <img src={trash} alt='eliminar' className='iconos' />  
+                    </td>    
                 </tr>
 
             </table>
